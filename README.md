@@ -17,7 +17,7 @@
 
 　　github  https://github.com/Zepan/ilichee    
 
-　　<font color=red>荔枝板DIY交流群：573832310</font>		（上车口令：爱荔枝）
+　　<font color=red> 荔枝板DIY交流群：573832310 </font>		（上车口令：爱荔枝）
 
 
 欢迎大家积极参与到DIY过程，可以对设计提出建议，或者在自己擅长的地方补充文档，贡献较大的可以有优惠。
