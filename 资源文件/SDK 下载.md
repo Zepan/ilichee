@@ -1,8 +1,8 @@
-×¢ÒâSDK½öÖ§³Ö64Î»¿ª·¢»·¾³£¬32Î»»ú¿ÉÒÔ¿ª64Î»ĞéÄâ»ú¿ª·¢¡£
+æ³¨æ„SDKä»…æ”¯æŒ64ä½å¼€å‘ç¯å¢ƒï¼Œ32ä½æœºå¯ä»¥å¼€64ä½è™šæ‹Ÿæœºå¼€å‘ã€‚
 
-linux SDK lichee.tar.gz
-Á´½Ó£ºhttp://pan.baidu.com/s/1i5hPz6l ÃÜÂë£ºd7fa
+linux SDK lichee.tar.gz  
+é“¾æ¥ï¼šhttp://pan.baidu.com/s/1i5hPz6l å¯†ç ï¼šd7fa
 
 a13_android4.2_v1.5.0 SDK  
-Á´½Ó£ºhttp://pan.baidu.com/s/1hrDzpfI ÃÜÂë£ºilwz 
+é“¾æ¥ï¼šhttp://pan.baidu.com/s/1hrDzpfI å¯†ç ï¼šilwz 
 
