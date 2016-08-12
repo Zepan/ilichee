@@ -17,7 +17,7 @@
 
 　　github  https://github.com/Zepan/ilichee    
 
-　　<font color=red> **荔枝板DIY交流群：573832310**</font>		（上车口令：爱荔枝）
+　　<font color=red> **荔枝板DIY交流群：573832310**</font>		（上车口令：爱荔枝）    
 　　荔枝派于2016/8/11晚19:30正式上线聚丰众筹啦！请猛击：<font color=red> **http://z.elecfans.com/70.html**</font>
 
 
