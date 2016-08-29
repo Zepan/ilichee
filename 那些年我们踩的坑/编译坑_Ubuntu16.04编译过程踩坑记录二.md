@@ -12,7 +12,7 @@
 sudo apt-get install mingw-w64
 ```
 ##提示GCC编译器问题
-此问题是因为作者采用GCC-4.7版，Ubuntu16.04 默认采用GCC-5，建议采用GCC-4.7，具体解决方法请参考ming42网友的文章——编译坑_Ubuntu 16.04编译过程踩坑记录
+此问题是因为作者使用的Ubuntu14.04采用GCC-4.7，Ubuntu16.04默认采用GCC-5，建议采用GCC-4.7，具体解决方法请参考ming42网友的文章——编译坑_Ubuntu 16.04编译过程踩坑记录
 <https://github.com/Zepan/ilichee/tree/master/那些年我们踩的坑>
 
 ##提示dtc更新
