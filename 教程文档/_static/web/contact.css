@@ -1,0 +1,261 @@
+.keyreply-brand,
+.keyreply-chat-icon,
+.keyreply-button,
+.keyreply-label {
+    font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Lato, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+#keyreply-container {
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    bottom: 0;
+}
+
+.keyreply-launcher,
+.keyreply-chat-icon {
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 100px;
+    bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.keyreply-chat-icon {
+    -webkit-transition: width 0.25s, height 0.25s;
+    transition: width 0.25s, height 0.25s;
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.keyreply-button {
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+    padding: 3px 6px;
+    padding: 0.2rem 0.4rem;
+    text-align: center;
+}
+
+.keyreply-chat-icon img {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+
+.keyreply-chat-icon.keyreply-panel {
+    position: fixed;
+    width: 280px;
+    height: 280px;
+    right: 50% !important;
+    top: 50% !important;
+    margin-right: -140px;
+    margin-top: -140px;
+    z-index: 11;
+}
+
+#keyreply-container.left .keyreply-chat-icon.keyreply-panel {
+    left: auto;
+}
+
+.keyreply-chat-icon:not(.keyreply-panel):hover {
+    width: 165px;
+    z-index: 12;
+}
+
+.keyreply-qr {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    margin: 40px;
+    border-radius: 5px;
+    visibility: visible;
+    background-size: contain;
+    -webkit-transition: visibility 0s linear 0.2s, opacity 0.2s linear 0.2s;
+    transition: visibility 0s linear 0.2s, opacity 0.2s linear 0.2s;
+}
+
+.keyreply-chat-icon:not(.keyreply-panel) .keyreply-qr {
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.keyreply-launcher.keyreply-launcher-active .keyreply-brand {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.keyreply-brand {
+    text-decoration: none;
+    position: absolute;
+    visibility: hidden;
+    font-weight: 500;
+    font-size: 11px;
+    bottom: -24px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border: 0;
+    right: 0px;
+    width: 90px;
+    text-align: right;
+    -webkit-transition: visibility 0s, opacity 0.5s linear 3s;
+    transition: visibility 0s, opacity 0.5s linear 3s;
+}
+
+.keyreply-label {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: white;
+    margin-top: 10px;
+    /*margin-left: -4px;*/
+    left: 60px;
+    line-height: 38px;
+    font-size: 22px;
+    font-weight: 400;
+    position: absolute;
+    display: inline-block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.keyreply-chat-icon:hover>.keyreply-label {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.keyreply-chat-icon.keyreply-panel>.keyreply-label {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.keyreply-overlay-chat-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 24px;
+    border-radius: 16px;
+}
+
+
+/* Media Query */
+
+
+/* Click Effects */
+
+.keyreply-launcher {
+    transition: color 0.7s;
+    -webkit-transition: color 0.7s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+}
+
+.keyreply-effect:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    filter: alpha(opacity=0);
+    pointer-events: none;
+}
+
+.keyreply-effect:before,
+.keyreply-effect:after {
+    box-shadow: 0 0 0 2px rgba(111, 148, 182, 0.6);
+}
+
+.keyreply-effect.keyreply-show-effect:before {
+    -webkit-animation: keyreply-effect-1 0.5s forwards;
+    animation: keyreply-effect-1 0.5s forwards;
+}
+
+.keyreply-effect.keyreply-show-effect:after {
+    -webkit-animation: keyreply-effect-2 0.5s forwards;
+    animation: keyreply-effect-2 0.5s forwards;
+}
+
+@-webkit-keyframes keyreply-effect-1 {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: scale3d(0.5, 0.5, 1);
+        transform: scale3d(0.5, 0.5, 1);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes keyreply-effect-1 {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: scale3d(0.5, 0.5, 1);
+        transform: scale3d(0.5, 0.5, 1);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@-webkit-keyframes keyreply-effect-2 {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: scale3d(0.5, 0.5, 1);
+        transform: scale3d(0.5, 0.5, 1);
+    }
+    50%,
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
+    }
+}
+
+@keyframes keyreply-effect-2 {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: scale3d(0.5, 0.5, 1);
+        transform: scale3d(0.5, 0.5, 1);
+    }
+    50%,
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
+    }
+}
